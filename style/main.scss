@@ -1,0 +1,401 @@
+@import "reset.css";
+button {
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hr {
+  height: 2px;
+  margin: 20px auto;
+}
+
+p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sub-heading {
+  font-size: 18px;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#header {
+  background: rgba(0, 0, 0, 0.4);
+
+  #nav {
+    height: 50px;
+
+    .logo {
+      float: left;
+      line-height: 50px;
+      margin-left: 40px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    ul {
+      float: right;
+
+      .active {
+        border-bottom: 4px solid #fff;
+      }
+
+      li {
+        display: inline-block;
+        line-height: 50px;
+        margin-right: 20px;
+
+        a {
+          line-height: 50px;
+          text-decoration: none;
+          display: inline-block;
+          color: #fff;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+    }
+  }
+
+  #banner {
+    height: 900px;
+    position: relative;
+
+    .inner {
+      max-width: 500px;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      top: 160px;
+      color: #fff;
+    }
+
+    h1 {
+      padding: 20px;
+      margin: 20px;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+    }
+
+    .sub-heading {
+      line-height: 30px;
+    }
+
+    button {
+      padding: 14px 60px;
+      margin: 150px;
+      font-size: 18px;
+      background: #089db0;
+    }
+
+    .more {
+      position: absolute;
+      left: 50%;
+      margin-left: -17px;
+      bottom: -50px;
+    }
+  }
+}
+
+#nav ul li .logo {
+  float: left;
+}
+
+.content {
+  .green-section {
+    background: #089db0;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+
+    .wrapper {
+
+      .hr {
+        height: 2px;
+        width: 60%;
+        background: #333;
+      }
+
+      .icon-group {
+        margin-top: 20px;
+
+        .icon{
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          border: 1px solid #fff;
+          transform: rotate(45deg);
+          margin: 30px;
+        }
+      }
+    }
+  }
+
+  .gray-section {
+    .article-preview > div {
+      float: left;
+    }
+
+    .article-preview:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .article-preview {
+      font-size: 0;
+      background: #333;
+
+      .img-section {
+        width: 40%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .text-section {
+        width: 60%;
+        color: #fff;
+        padding-right: 100px;
+        position: relative;
+        top: 60px;
+        left: 50px;
+      }
+    }
+
+    .article-preview:nth-child(odd) {
+      background: rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  .purple-section {
+    background: #262149;
+    color: #fff;
+    padding: 80px;
+
+    .heading-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+
+      .hr {
+        background: #373259;
+        width: 60%;
+      }
+
+      .car-group {
+        margin: 20px auto;
+
+        .card {
+          width: 50%;
+          float: left;
+          min-height: 300px;
+          padding: 50px;
+        }
+
+        .card:first-child {
+          background: rgba(0, 0, 0, 0.04);
+        }
+
+        .card:nth-child(2) {
+          background: rgba(0, 0, 0, 0.12);
+        }
+
+        .card:nth-child(3) {
+          background: rgba(0, 0, 0, 0.20);
+        }
+
+        .card:nth-child(4) {
+          background: rgba(0, 0, 0, 0.28);
+        }
+      }
+    }
+  }
+  .support-section {
+    min-height: 450px;
+    line-height: 450px;
+    width: 100%;
+    padding: 10% 20%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    box-sizing: border-box;
+
+    .text {
+      width: 50%;
+      float: left;
+      max-height: 40%;
+
+      h2 {
+        line-height: 60px;
+      }
+    }
+
+    .buttons {
+      width: 50%;
+      float: left;
+      max-height: 40%;
+
+      button {
+        display: block;
+        width: 50%;
+        height: 40px;
+        margin: 20px auto;
+      }
+
+      .button-1 {
+        background: #ff3838;
+      }
+
+      .button-2 {
+        background: transparent;
+        border: 2px solid #fff;
+      }
+    }
+  }
+
+}
+
+#footer {
+  background: #333;
+  color: #fff;
+  min-height: 300px;
+  text-align: center;
+
+  .share-group {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px;
+
+    li {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+  .copy-right {
+    padding: 20px;
+  }
+}
+
+.main-wrapper {
+  background: #444 url("../img/banner.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+
+  .mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #ccc;
+    background: transparent;
+    border: 1px solid #999;
+    border-radius: 10px;
+  }
+}
+
+#sidebar {
+  width: 300px;
+  background: #333;
+  color: fff;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  bottom: 0;
+  padding: 20px 0;
+
+  ul {
+    li {
+      a {
+        padding: 20px 30px;
+        width: 100%;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover { background: #444 }
+      }
+    }
+  }
+}
+
+//文章页部分的格式
+
+.article {
+
+  #header {
+
+    #banner {
+      height: 400px;
+
+      .inner {
+        top: 30px;
+
+        h1 {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .content {
+    background: #fefefe;
+
+    .content-wrapper {
+      width: 1000px;
+      margin: 0 auto;
+
+      article {
+        line-height: 2em;
+        padding: 10px 0;
+      }
+
+      .article-info {
+        font-size: 14px;
+        color: #888;
+        padding: 15px 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
